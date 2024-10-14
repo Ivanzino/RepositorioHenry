@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registrarse.css">
+    <link rel="icon" href="imagenes/brazil-png-big-image-png-2353.ico">
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop class="video-fondo">
+            <source src="./imagenes/Brasil - Bandeira e hino nacional em 4K.mp4" type="video/mp4">
+            <!-- Agrega más fuentes de video aquí si lo deseas -->
+        </video>
+        <div class="zfr">
+            <form action="mensaje.html">
+                <h1>👀Registro👀</h1>
+                <div class="newUsername">
+                <label for="newUsername">Nuevo Usuario:</label>
+                <input type="text" id="newUsername"  required>
+                </div>
+                <div class="newPassword"> 
+                <label for="newPassword">Nueva Contraseña:</label>
+                <input type="password" id="newPassword"  required>
+                </div>
+                <br>
+                <input  type="submit" value="Registrarse">
+            </form>
+            <br>
+                <button id="IniciarSesion">Iniciar Sesion</button>
+            <script>
+                document.getElementById("IniciarSesion").addEventListener("click",function(event){
+                    event.preventDefault
+                    window.location.href="paginaWeb.html"
+                })
+            </script>    
+        </div>
+    </div> 
+</body>
+</html>

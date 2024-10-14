@@ -1,0 +1,53 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* para que nose desplaze horizontal */
+    /* overflow-x: hidden; */
+}
+
+/* .video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+} */
+.lista li a {
+    color:yellow ;
+}
+.lista li a:hover{
+    color: black;
+}
+.video-fondo {
+    position: fixed;
+    /* espacio verticalmente */
+    top: 0;
+    /* espacio horizontal */
+    left: 0;
+    /* tamaño del video */
+    width: 100%;
+    height: 100%;
+    /* para adaptarse al contenedor sin deformarlo */
+    object-fit: cover;
+    /* Un valor positivo de z-index coloca un elemento por encima de los elementos con un valor de z-index inferior o no especificado, mientras que un valor negativo coloca el elemento detrás de los elementos con valores positivos o no especificados. */
+    z-index: -1;
+    /* Elementos de fondo: Si tienes elementos de fondo decorativos, como una imagen de fondo, y deseas que los clics o movimientos de ratón se dirijan al contenido que está detrás de ellos. */
+    pointer-events:none; 
+}
+
+/* .contenido {
+    position: relative;
+    z-index: 1;
+    /* Estilos adicionales para el contenido */
+/* } */ 
+
+
+
+
+
+                                            /* como se usa lo de arriba */
+
+/* body, html: Establecemos margin y padding en 0 para el body y el html, y establecemos height en 100% para asegurarnos de que ocupen toda la altura de la ventana del navegador. overflow-x: hidden; evita el desplazamiento horizontal.
+.video-container: Establecemos position: relative; para que los elementos dentro de él se posicionen de manera relativa a este contenedor. overflow: hidden; asegura que cualquier contenido que sobresalga del contenedor no sea visible.
+.video-fondo: Configuramos el video de fondo. position: fixed; lo mantiene fijo en la ventana del navegador. pointer-events: none; permite que los eventos del ratón pasen a través del video.
+.contenido: Establecemos position: relative; y z-index: 1; para que el contenido esté por encima del video de fondo. */
